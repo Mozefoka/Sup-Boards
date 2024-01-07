@@ -1,0 +1,52 @@
+.micro-top {
+	background-image: url("/src/assets/images/micro.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 525px;
+
+	@media (max-width: 768px) {
+		padding-top: 420px;
+	}
+
+	&__btn {
+		left: 52%;
+		top: 200px;
+
+		@media (max-width: 475px) {
+			left: 42%;
+		}
+	}
+
+	&__content-m-technology {
+		padding-bottom: 85px;
+	}
+
+	&__title {
+		max-width: 470px;
+		margin-bottom: 60px;
+		line-height: normal;
+
+		@media (max-width: 475px) {
+			font-size: 45px;
+		}
+
+		@media (max-width: 359px) {
+			font-size: 35px;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__list {
+		margin-left: 23px;
+		font-size: 20px;
+		li + li {
+			margin-top: 15px;
+		}
+		li {
+			&::before {
+				content: "";
+				padding-right: 5px;
+			}
+		}
+	}
+}

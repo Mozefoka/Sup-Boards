@@ -1,0 +1,113 @@
+.footer {
+	padding: 100px 0 80px 0;
+	background-color:#262C27;
+	color: #fff;
+
+	@media (max-width: 835px) {
+		padding-top: 70px;
+	}
+
+	&__contact-and-logo {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 835px) {
+			flex-direction: column;
+		}
+	}
+
+	&__form {
+		input + input {
+			margin-top: 65px;
+		}
+
+		@media (max-width: 835px) {
+			order: 2;
+		}
+	}
+
+	&__form-title {
+		font-family: Comfortaa, cursive;
+		margin-bottom: 35px;
+
+		@media (max-width: 767px) {
+			font-size: 50px;
+		}
+		@media (max-width: 450px) {
+			font-size: 40px;
+		}
+	}
+
+	&__form-input {
+			display: block;
+			max-width: 500px;
+			width: 100%;
+			padding-bottom: 10px;
+			background-color:#262C27;
+			border-bottom: 1px solid rgba($color: #fff, $alpha: 0.4);
+			color: #fff;
+	}
+
+	&__form-btn {
+		padding: 10px 65px;
+		margin: 50px 0 95px 0;
+		font-size: 20px;
+	}
+
+	&__logo {
+		path {
+			transition: fill .3s ease;
+		}
+
+		:hover {
+			fill: #0093A1;
+		}
+
+		@media (max-width: 835px) {
+			order: 1;
+			align-self: center;
+			margin-bottom: 100px;
+		}
+		@media (max-width: 767px) {
+			width: 300px;
+		}
+		@media (max-width: 420px) {
+			width: 250px;
+		}
+	}
+
+	&__instagram {
+		margin-bottom: 50px;
+	}
+
+	&__instagram-images {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	&__instagram-title {
+		font-size: 18px;
+		margin-bottom: 30px;
+	}
+
+	&__menu {
+		font-size: 18px;
+	}
+
+	&__menu-list {
+		display: flex;
+		justify-content: space-between;
+
+		a {
+			color: #fff;
+		}
+
+		@media (max-width: 600px) {
+			flex-direction: column;
+			
+			li + li {
+				margin-top: 10px;
+			}
+		}
+	}
+}
