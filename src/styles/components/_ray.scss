@@ -83,6 +83,28 @@
 		bottom: 100px;
 		left: 280px;
 
+		&:hover {
+			transform: scale(1.2);
+		}
+
+		@media (max-width: 768px) {
+			background-size: 150px;
+			bottom: 80px;
+		}
+		@media (max-width: 445px) {
+			background-size: 100px;
+			bottom: 80px;
+			left: 270px;
+		}
+
+		@media (max-width: 385px) {
+			position: static;
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+		}
+		
+
 		&::before {
 			content: "590 €";
 			position: absolute;
@@ -102,20 +124,10 @@
 				top: 39px;
 				left: 25px;
 			}
-		}
 
-		&:hover {
-			transform: scale(1.2);
-		}
-
-		@media (max-width: 768px) {
-			background-size: 150px;
-			bottom: 80px;
-		}
-		@media (max-width: 445px) {
-			background-size: 100px;
-			bottom: 80px;
-			left: 270px;
+			@media (max-width: 385px) {
+				position: relative;
+			}
 		}
 	}
 
